@@ -3,7 +3,12 @@ A blog built with laravel 8
 
 # SETUP
 
-before you run the app localy upu need to do some steps first
+before you run the app localy, you need to do some steps first
+
+## .env file
+- copy whats in .env.example into another file and name it with this command `cp .env.example .env`
+- generate a key for your app with `php artisan key:generate`
+- set up your configuration in .env file
 
 ## Database Setup
 
@@ -12,11 +17,15 @@ before you run the app localy upu need to do some steps first
 - compelete .env file with your right configuration and add it to your root directory
 
 
-## Migrations
 
-- after setting up your database run ` php artisan migrate` to create needed tables
 
 
 ## now you are ready to run the app
 
-### `npm install`
+- ### `composer install`
+- ### `npm install`
+
+- Migrations
+
+    - after setting up your database and installing run `php artisan migrate` to create needed tables
+- serve appliction with `php artisan serve`
